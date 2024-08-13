@@ -5,14 +5,16 @@
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
     <meta name='viewport' content='width=device-width, initial-scale=1.0'>
     <title>Galaxy</title>
-    <link rel='stylesheet' href='style.css'>
+	<link rel='stylesheet' href='style.css'>
     <script src='https://kit.fontawesome.com/f77600b8df.js' crossorigin='anonymous'></script>
 </head>
 <body>
     <nav>
         <div class='nav-item' onclick="document.getElementById('about').scrollIntoView({behavior: 'smooth'});">Проект</div>
         <div class='nav-item' onclick="document.getElementById('team').scrollIntoView({behavior: 'smooth'});">Команда</div>
+        <div class='nav-item' onclick="document.getElementById('merch').scrollIntoView({behavior: 'smooth'});">Мерч</div>
         <div class='nav-item' onclick="document.getElementById('submit').scrollIntoView({behavior: 'smooth'});">Заявка</div>
+        <div class='nav-item'><span class='cart-text'>Корзина</span> <span class='cart-amount'>0</span></div>
         <div class='nav-item switch-theme-button'>Сменить тему</div>
     </nav>
     <header>
@@ -50,7 +52,52 @@
                     <div class='team-item-top'></div>
                     <div class='team-item-bottom'>
                         <h2>Данил</h2>
-                        <p>Прячет посуду.</p>
+                        <p>Второй пилот.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class='section4' id='merch'>
+            <h1>Мерч</h1>
+            <div class='merch-wrapper'>
+                <div class='merch-item merch1'>
+                    <div class='merch-item-top'></div>
+                    <div class='merch-item-bottom'>
+                        <h2 class='merch-item-name'>[название]</h2>
+                        <p class='merch-item-descr'>[описание]</p>
+                        <div class='add-to-cart-group'>
+                            <div class='add-to-cart-btn'><i class='fa-solid fa-cart-shopping'></i></div>&nbsp;- <span class='merch-item-price'>[цена]</span>р.
+                        </div>
+                    </div>
+                </div>
+                <div class='merch-item merch2'>
+                    <div class='merch-item-top'></div>
+                    <div class='merch-item-bottom'>
+                        <h2 class='merch-item-name'>[название]</h2>
+                        <p class='merch-item-descr'>[описание]</p>
+                        <div class='add-to-cart-group'>
+                            <div class='add-to-cart-btn'><i class='fa-solid fa-cart-shopping'></i></div>&nbsp;- <span class='merch-item-price'>[цена]</span>р.
+                        </div>
+                    </div>
+                </div>
+                <div class='merch-item merch3'>
+                    <div class='merch-item-top'></div>
+                    <div class='merch-item-bottom'>
+                        <h2 class='merch-item-name'>[название]</h2>
+                        <p class='merch-item-descr'>[описание]</p>
+                        <div class='add-to-cart-group'>
+                            <div class='add-to-cart-btn'><i class='fa-solid fa-cart-shopping'></i></div>&nbsp;- <span class='merch-item-price'>[цена]</span>р.
+                        </div>
+                    </div>
+                </div>
+                <div class='merch-item merch4'>
+                    <div class='merch-item-top'></div>
+                    <div class='merch-item-bottom'>
+                        <h2 class='merch-item-name'>[название]</h2>
+                        <p class='merch-item-descr'>[описание]</p>
+                        <div class='add-to-cart-group'>
+                            <div class='add-to-cart-btn'><i class='fa-solid fa-cart-shopping'></i></div>&nbsp;- <span class='merch-item-price'>[цена]</span>р.
+                        </div>
                     </div>
                 </div>
             </div>
@@ -87,7 +134,5 @@
             </div>
         </section>
     </main>
-	    <script src="script.js"></script>
-
- </body>
+</body>
 </html>
