@@ -59,8 +59,12 @@ section {
     background-color: #C2AB99;
 }
 
-.section3 {
+.section4 {
     background-color: #D1BBAA;
+}
+
+.section3 {
+    background-color: #C2AB99;
 }
 
 nav {
@@ -77,14 +81,14 @@ nav {
     padding: .5em;
     border: 2px solid white;
     border-radius: 5px;
-    padding: .5em;
     color: white;
     margin-right: 1em;
     user-select: none;
     cursor: pointer;
 }
 
-#team > h1 {
+#team > h1,
+#merch > h1 {
     text-transform: uppercase;
     font-size: 2.5em;
     text-align: left;
@@ -92,7 +96,8 @@ nav {
 }
 
 .team-wrapper,
-.about-wrapper {
+.about-wrapper,
+.merch-wrapper {
     width: 80vw;
     height: auto;
     display: flex;
@@ -116,16 +121,22 @@ nav {
     width: 100%;
 }
 
-.team-item {
+.team-item,
+.merch-item {
     width: 22vw;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.team-item-top {
+.merch-item {
+    width: 15vw;
+}
+
+.team-item-top,
+.merch-item-top {
     width: 100%;
-    aspect-ratio: 1 / 1;
+    aspect-ratio: 1/1;
     background-size: cover;
     border: 5px solid white;
     border-radius: 50%;
@@ -147,8 +158,47 @@ nav {
     background-size: cover;
 }
 
-.team-item-bottom h2 {
+.team-item-bottom h2,
+.merch-item-bottom h2 {
     text-transform: uppercase;
+}
+
+.merch-item-bottom {
+    width: 100%;
+}
+
+.merch-item-bottom h2 {
+    font-size: 1em;
+}
+
+.merch-item-bottom p {
+    font-size: .8em;
+    display: -webkit-box;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+}
+
+.merch1 .merch-item-top {
+    background: url(/uploads/2022/11/plate.png);
+    background-size: cover;
+
+}
+
+.merch2 .merch-item-top {
+    background: url(/uploads/2022/11/mug.png);
+    background-size: cover;
+}
+
+.merch3 .merch-item-top {
+    background: url(/uploads/2022/11/rocket_model.png);
+    background-size: cover;
+}
+
+.merch4 .merch-item-top {
+    background: url(/uploads/2022/11/rover.png);
+    background-size: cover;
 }
 
 .submit-wrapper {
@@ -218,6 +268,7 @@ nav {
     padding: .5em;
     border-bottom: 1px solid #5D4229;
     font-size: 1.1em;
+    box-sizing: border-box;
 }
 
 .submit-input:active,
@@ -255,4 +306,40 @@ nav {
     margin: 0;
     box-sizing: border-box;
     width: 100%;
+}
+
+.add-to-cart-group {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.add-to-cart-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: .5em;
+    font-size: .8em;
+    aspect-ratio: 1 / 1;
+    color: white;
+    background: #5D4229;
+    border-radius: 2px;
+    width: fit-content;
+    user-select: none;
+}
+
+.add-to-cart-btn:hover {
+    background: #8a623d;
+    cursor: pointer;
+}
+
+.add-to-cart-btn:active {
+    background: #5D4229;
+}
+
+.cart-amount {
+    background: white;
+    color: black;
+    border-radius: 20%;
+    padding: 0 .2em;
 }
