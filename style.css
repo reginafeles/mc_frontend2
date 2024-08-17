@@ -181,23 +181,23 @@ nav {
 }
 
 .merch1 .merch-item-top {
-    background: url(/uploads/2022/11/plate.png);
+    background: url('https://astrozona.ru/shopnew/1165.jpg');
     background-size: cover;
 
 }
 
 .merch2 .merch-item-top {
-    background: url(/uploads/2022/11/mug.png);
+    background: url('https://www.astrofest.ru/wp-content/uploads/2021/02/Mars-small-1.jpg');
     background-size: cover;
 }
 
 .merch3 .merch-item-top {
-    background: url(/uploads/2022/11/rocket_model.png);
+    background: url('rocket.jpg');
     background-size: cover;
 }
 
 .merch4 .merch-item-top {
-    background: url(/uploads/2022/11/rover.png);
+    background: url('model.jpg');
     background-size: cover;
 }
 
