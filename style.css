@@ -144,17 +144,17 @@ nav {
 }
 
 .team1 .team-item-top {
-    background: url(/uploads/2022/11/astr1.png);
+    background: url('senior.pnh');
     background-size: cover;
 }
 
 .team2 .team-item-top {
-    background: url(/uploads/2022/11/astr2.png);
+    background: url('middle.png');
     background-size: cover;
 }
 
 .team3 .team-item-top {
-    background: url(/uploads/2022/11/astr3.png);
+    background: url('junior.png');
     background-size: cover;
 }
 
